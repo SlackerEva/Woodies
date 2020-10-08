@@ -1,0 +1,603 @@
+/* ---   Fonts ---   */
+
+/* nunito-regular - latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Nunito Regular'), local('Nunito-Regular'),
+       url('../fonts/nunito-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/nunito-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* nunito-700 - latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Nunito Bold'), local('Nunito-Bold'),
+       url('../fonts/nunito-v14-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/nunito-v14-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* nunito-800 - latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Nunito ExtraBold'), local('Nunito-ExtraBold'),
+       url('../fonts/nunito-v14-latin-800.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/nunito-v14-latin-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* ---   Fonts end ---   */
+
+.page {
+  width: 1152px;
+  margin: auto;
+  font-family: 'Nunito', 'Arial', sans-serif;
+}
+
+/* ---   Header   ---*/
+
+.header {
+  height: 800px;
+  position: relative;
+  z-index: 0;
+  margin-bottom: 100px;
+}
+
+.navigation {
+  width: 750px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 23px;
+  left: 80px;
+}
+
+.logo {
+  width: 192px;
+  height: 33px;
+  margin-right: 115px;
+}
+
+.menu {
+  width: 430px;
+  height: 22px;
+  display: flex;
+  text-decoration: none;
+}
+
+.menu__links {
+  width: 430px;
+  height: 22px;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.menu__link {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(34, 34, 34, 0.75);
+}
+
+.menu__link:hover {
+  color: #daa520;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.header__subtitle {
+  position: absolute;
+  width: 504px;
+  height: 98px;
+  top: 217px;
+  left: 102px;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 49px;
+  text-align: left;
+  margin: 0 0 16px 0;
+  color: #3e3f43;
+}
+
+.header__span-accent {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 49px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.header__title {
+  position: absolute;
+  width: 504px;
+  height: 196px;
+  top: 331px;
+  left: 102px;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 98px;
+  text-align: left;
+  margin: 0 0 16px 0;
+  color: #313235;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #daa520;
+  color: white;
+  border: none;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.button-header {
+  position: absolute;
+  width: 175px;
+  height: 50px;
+  top: 543px;
+  left: 102px;
+}
+
+.header__main-illustration {
+  position: absolute;
+  top: 165px;
+  right: 0;
+}
+
+.header__rectangle-pic {
+  background-image: url(../images/rectangle.png);
+  width: 370px;
+  height: 800px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+/* ---   Header end   --- */
+
+/* ---   About Us   --- */
+
+.about {
+  height: 950px;
+  position: relative;
+  z-index: 0;
+  margin-bottom: 100px;
+}
+
+.about__subtitle {
+  position: absolute;
+  height: 49px;
+  width: 211px;
+  left: 100px;
+  top: 24px;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 49px;
+  color: #3e3f43;
+  margin: 0;
+}
+
+.about__title {
+  position: absolute;
+  height: 98px;
+  width: 395px;
+  left: 657px;
+  top: 0px;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 98px;
+  margin: 0;
+  color: rgba(34, 34, 34, 0.1);
+}
+
+.about__rectangle-pic {
+  background-image: url(../images/rectangle-yellow.png);
+  position: absolute;
+  height: 388px;
+  width: 278px;
+  left: 100px;
+  top: 138px;
+  z-index: -1;
+}
+
+.about__main-illustration {
+  position: absolute;
+  height: 306px;
+  width: 388px;
+  left: 138px;
+  top: 220px;
+}
+
+.about__first-text {
+  position: absolute;
+  height: 98px;
+  width: 448px;
+  left: 604px;
+  top: 242px;
+  color: #3e3f43;
+  font-size: 36px;
+  line-height: 49px;
+  margin: 0;
+}
+
+.text-style {
+  font-style: normal;
+  font-weight: 600;
+}
+
+.about__span-accent {
+  font-weight: 800;
+}
+
+.about__first-subtext {
+  position: absolute;
+  height: 66px;
+  width: 448px;
+  left: 604px;
+  top: 356px;
+  font-size: 24px;
+  line-height: 33px;
+  margin: 0;
+}
+
+.about__second-text {
+  position: absolute;
+  height: 49px;
+  width: 680px;
+  left: 102px;
+  top: 693px;
+  font-size: 36px;
+  line-height: 49px;
+  margin: 0;
+}
+
+.about__second-subtext {
+  position: absolute;
+  height: 66px;
+  width: 680px;
+  left: 102px;
+  top: 758px;
+  font-size: 24px;
+  line-height: 33px;
+  margin: 0;
+}
+
+.about__illustration {
+  position: absolute;
+  height: 384px;
+  width: 287px;
+  left: 865px;
+  top: 566px;
+}
+
+/* ---   About Us end  --- */
+/* ---   How it works  --- */
+
+.how-works {
+  height: 453px;
+  margin: 0 100px 100px;
+  display: block;
+}
+
+.how-works__titles {
+  position: relative;
+  height: 98px;
+}
+
+.how-works__subtitle {
+  position: absolute;
+  height: 49px;
+  width: 265px;
+  left: 0;
+  top: 25px;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 49px;
+  color: #3e3f43;
+  margin: 0;
+}
+
+.how-works__title {
+  position: absolute;
+  height: 98px;
+  width: 603px;
+  right: 0;
+  top: 0;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 98px;
+  margin: 0;
+  color: rgba(34, 34, 34, 0.1);
+}
+
+.table {
+  height: 177px;
+  display: flex;
+  margin-top: 64px;
+}
+
+.table__cell {
+  height: 177px;
+  width: 238px;
+  position: relative;
+}
+
+.table__number {
+  position: absolute;
+  width: 58px;
+  height: 131px;
+  left: 17px;
+  top: 18.5px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 96px;
+  line-height: 131px;
+  text-align: center;
+  color: rgba(249, 189, 189, 0.25);
+  margin: 0;
+}
+
+.table__image {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  left: 59px;
+  top: 0;
+}
+
+.table__header {
+  position: absolute;
+  text-align: center;
+  left: 0;
+  bottom: 0;
+  width: 238px;
+  height: 33px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 33px;
+  margin: 0;
+}
+
+.button-how-works {
+  width: 212px;
+  height: 50px;
+  margin-left: 370px;
+  margin-top: 64px;
+}
+
+/* ---   How it works end  --- */
+/* ---   Categories  --- */
+
+.categories {
+  height: 978px;
+  margin: 0 100px 100px 100px;
+}
+
+.categories__titles {
+  position: relative;
+  height: 98px;
+}
+
+.categories__subtitle {
+  position: absolute;
+  height: 49px;
+  width: 252px;
+  left: 0;
+  top: 25px;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 49px;
+  color: #3e3f43;
+  margin: 0;
+}
+
+.categories__title {
+  position: absolute;
+  height: 98px;
+  width: 473px;
+  right: 0;
+  top: 0;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 98px;
+  margin: 0;
+  color: rgba(34, 34, 34, 0.1);
+}
+
+.table-categories {
+  margin: 40px 0 0 0;
+  height: 840px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.table-category__row {
+  width: 952px;
+  display: flex;
+}
+
+.table-category__cell {
+  position: relative;
+  height: 400px;
+  width: 280px;
+  margin-right: 56px;
+}
+
+.table-category__cell:last-child {
+  margin-right: 0;
+}
+
+.table-category__header {
+  position: absolute;
+  width: 142px;
+  height: 33px;
+  left: 16px;
+  top: 24px;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+  color: #3e3f43;
+  margin: 0;
+}
+
+.table-category__image {
+  position: absolute;
+  z-index: 0;
+  width: 246px;
+  height: 224px;
+  left: 1px;
+  top: 88px;
+}
+
+.table-category__rectangle-pic {
+  position: absolute;
+  height: 400px;
+  width: 280px;
+  z-index: -1;
+}
+
+.table-category__button {
+  position: absolute;
+  width: 123px;
+  height: 40px;
+  left: 141px;
+  top: 336px;
+  border: 1px solid #3E3F43;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color:rgba(0, 0, 0, 0);
+}
+/* ---   Categories end --- */
+/* ---   Footer --- */
+
+.footer {
+  background: url(../images/footer.png);
+  width: 1152px;
+  height: 455px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.footer__table {
+ position: absolute;
+ display: flex;
+ top: 208px;
+ left: 107px;
+ flex-direction: column;
+}
+
+.footer__columns {
+  width: 709px;
+  height: 138px;
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0 45px 0;
+  border-top: 1px solid #C4C4C4;
+}
+
+.footer__logo {
+  margin: 0 0 16px 0;
+}
+
+.footer__column_contact-info{
+  width: 192px;
+  height: 138px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__column-heading {
+  height: 25px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #333333;
+  margin: 8px 0 16px 0;
+}
+
+.footer__column-links{
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: #8d8d8d;
+  height: 19px; 
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  display:inline-block;
+  padding-bottom: 16px;
+}
+
+.footer__link:last-child {
+  margin: 0;
+}
+
+.footer__column_product {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__column_resources {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__column_company {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__column_follow-us {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__main-illustration {
+  background: url(../images/footer-table.png);
+  position: absolute;
+  width: 508px;
+  height: 455px;
+  top: 0;
+  right: 0;
+}
+
+.footer__name {
+  margin: 0 0 0 524px;
+  height: 16px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #8D8D8D;
+}
+/* ---   Footer end --- */
